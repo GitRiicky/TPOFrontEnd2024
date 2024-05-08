@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos específicos para dispositivos de escritorio */
+@media only screen and (min-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+    main {
+        padding: 50px;
+    }
+}
+
+/* Estilos específicos para tablet */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+    main {
+        padding: 30px;
+    }
+    footer {
+        padding: 5px 20px;
+    }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 410px) {
+    header {
+        padding: 10px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start; /* Alinear elementos al inicio */
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        padding: 5px 20px;
+    }
+}
+
+/* Estilo para el formulario de contacto */
+#contactForm {
+    background-image: url('../static/contacto.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el fondo */
+    background-position-y: -350px; /* Desplaza la imagen 20 píxeles hacia arriba (puedes ajustar este valor según necesites) */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno para que el contenido no esté pegado al borde */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/* Estilos para el botón de enviar del formulario */
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+/* Cambiar el color de fondo al pasar el cursor sobre el botón */
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.container {
+    text-align: center;
+    padding-top: 20px; /* Espacio superior para separar del borde superior */
+}
+
+.logo-nav-container {
+    display: inline-block;
+    vertical-align: top; /* Alineación superior para alinear la parte superior de la imagen y la lista */
+}
+
+.logo-img {
+    display: block; /* Para que no haya espacio adicional debajo de la imagen */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px; /* Espacio a la izquierda de la lista de navegación */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los elementos de la lista */
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+    position: relative; /* Añadido para que los elementos absolutos estén relativos a este */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+    position: relative; /* Añadido para que los elementos absolutos estén relativos a este */
+    display: inline-block; /* Añadido para que el contenido de a:before y a:after funcione correctamente */
+}
+
+nav ul li a:before,
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #555; /* Color de la línea */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color */
+}
+
+nav ul li a:before {
+    top: 0;
+    left: -1px; /* Ajuste de la posición hacia la izquierda */
+}
+
+nav ul li a:after {
+    bottom: 0;
+    left: -1px; /* Ajuste de la posición hacia la izquierda */
+}
+
+nav ul li a:hover:before,
+nav ul li a:hover:after {
+    background-color: #ddd; /* Cambio de color de la línea al pasar el cursor */
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Cambio de color de fondo al pasar el cursor */
+    color: white; /* Cambio de color del texto al pasar el cursor */
+}
