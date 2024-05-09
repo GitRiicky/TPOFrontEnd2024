@@ -82,6 +82,9 @@ main {
     border-radius: 10px;
 }
 
+#contactForm textarea {
+    resize: none;
+}
 
 /* Estilos para el botón de enviar del formulario */
 input[type="submit"] {
