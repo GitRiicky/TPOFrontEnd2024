@@ -70,15 +70,6 @@ main {
     footer {
         padding: 5px 20px;
     }
-
-    html, body {
-        /* Deshabilitar el zoom con pellizco */
-        touch-action: manipulation;
-        -ms-touch-action: manipulation;
-        touch-zooming: none;
-        -ms-touch-zooming: none;
-        overflow: hidden;
-    }
 }
 
 /* Estilo para el formulario de contacto */
