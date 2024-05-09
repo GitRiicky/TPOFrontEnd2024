@@ -70,6 +70,10 @@ main {
     footer {
         padding: 5px 20px;
     }
+
+    #contactForm textarea {
+        max-width: calc(100% - 40px);
+    }
 }
 
 /* Estilo para el formulario de contacto */
