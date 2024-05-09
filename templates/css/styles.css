@@ -76,7 +76,7 @@ main {
 #contactForm {
     background-image: url('../static/contacto.webp');
     background-size: cover; 
-    background-position-y: -10px;
+    background-position-y: -350px;
     color: white; 
     padding: 20px; 
     border-radius: 10px;
