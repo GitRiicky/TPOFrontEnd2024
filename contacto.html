@@ -15,6 +15,51 @@
             display: inline-block;
             margin-bottom: 20px; 
         }
+
+        /* Estilo para los campos de entrada */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 40%; /* Establecer el ancho al 40% */
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        /* Estilo para el botón de envío */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: auto; /* Ancho automático */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo para el contenedor del formulario */
+        .form-container {
+            text-align: left; /* Alinear el texto a la izquierda */
+        }
+
+        /* Estilo para los campos de entrada */
+        .form-container label {
+            display: block; /* Mostrar las etiquetas en bloques */
+            margin-bottom: 5px; /* Agregar un pequeño margen inferior */
+        }
+
+        /* Estilo para los checkboxes */
+        .checkbox-container {
+            margin-top: 5px; /* Agregar un pequeño margen superior */
+        }
     </style>
 </head>
 <body>
@@ -36,17 +81,19 @@
         <h2>Contacto</h2>
         <p>¡Estamos aquí para ayudarte! Puedes contactarnos a través del siguiente formulario:</p>
        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="phone">Teléfono:</label>
-            <input type="text" id="phone" name="phone" required pattern="\d*" title="Ingrese solo números"><br><br>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" cols="35" required></textarea><br><br>
+            <div class="form-container">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" name="phone" required pattern="\d*" title="Ingrese solo números">
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            </div>
 
             <label for="reason">Motivo de contacto:</label>
             <select id="reason" name="reason" required>
@@ -55,13 +102,15 @@
                 <option value="Reclamo">Reclamo</option>
                 <option value="Solicitud de información">Solicitud de información</option>
             </select><br><br>
-
-            <label>Preferencias de contacto:</label><br>
-            <input type="checkbox" id="contactMethodEmail" name="contactMethod" value="Email">
-            <label for="contactMethodEmail">Email</label><br>
-            <input type="checkbox" id="contactMethodPhone" name="contactMethod" value="Teléfono">
-            <label for="contactMethodPhone">Teléfono</label><br><br>
-
+                
+            <div class="checkbox-container">
+                <label>Preferencias de contacto:</label><br>
+                <input type="checkbox" id="contactMethodEmail" name="contactMethod" value="Email">
+                <label for="contactMethodEmail">Email</label><br>
+                <input type="checkbox" id="contactMethodPhone" name="contactMethod" value="Teléfono">
+                <label for="contactMethodPhone">Teléfono</label>
+            </div>
+                
             <label for="attachment">Adjuntar imagen:</label>
             <input type="file" id="attachment" name="attachment"><br><br>
 
