@@ -93,7 +93,7 @@ main {
 
 /* Estilos para el botón de enviar del formulario */
 input[type="submit"] {
-    background-color: #333;
+    background-color: #32bc28;
     color: #fff;
     padding: 10px 20px;
     border: none;
