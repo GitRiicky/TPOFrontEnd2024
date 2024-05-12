@@ -37,6 +37,17 @@ main {
     main {
         padding: 50px;
     }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 50%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+    }
 }
 
 /* Estilos específicos para tablet */
@@ -49,6 +60,17 @@ main {
     }
     footer {
         padding: 5px 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
     }
 }
 
@@ -73,7 +95,13 @@ main {
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%;
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
     }
 }
 
@@ -85,10 +113,6 @@ main {
     color: white; 
     padding: 20px; 
     border-radius: 10px;
-}
-
-#contactForm textarea {
-    resize: none;
 }
 
 /* Estilos para el botón de enviar del formulario */
@@ -174,19 +198,6 @@ nav ul li a:hover {
     color: white; 
 }
 
-/* Estilo para los campos de entrada */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
 /* Estilo para el contenedor del formulario */
 .form-container {
     text-align: left;
@@ -214,4 +225,3 @@ textarea {
     font-size: 24px;
     color: #d23535;
 }
-
