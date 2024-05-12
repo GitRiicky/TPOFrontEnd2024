@@ -20,7 +20,7 @@
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 40%; /* Establecer el ancho al 40% */
+            width: 100%; 
             padding: 10px;
             margin: 5px 0;
             box-sizing: border-box;
@@ -38,7 +38,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: auto; /* Ancho automático */
+            width: auto;
         }
 
         input[type="submit"]:hover {
@@ -47,18 +47,27 @@
 
         /* Estilo para el contenedor del formulario */
         .form-container {
-            text-align: left; /* Alinear el texto a la izquierda */
+            text-align: left;
         }
 
         /* Estilo para los campos de entrada */
         .form-container label {
-            display: block; /* Mostrar las etiquetas en bloques */
-            margin-bottom: 5px; /* Agregar un pequeño margen inferior */
+            display: block; 
+            margin-bottom: 5px; 
         }
 
         /* Estilo para los checkboxes */
         .checkbox-container {
-            margin-top: 5px; /* Agregar un pequeño margen superior */
+            margin-top: 5px;
+        }
+
+        /* Media query para dispositivos móviles */
+        @media only screen and (max-width: 768px) {
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 80%;
+            }
         }
     </style>
 </head>
