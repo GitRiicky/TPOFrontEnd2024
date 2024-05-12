@@ -70,6 +70,11 @@ main {
     footer {
         padding: 5px 20px;
     }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+    }
 }
 
 /* Estilo para el formulario de contacto */
@@ -167,4 +172,37 @@ nav ul li a:hover:after {
 nav ul li a:hover {
     background-color: #ddd; 
     color: white; 
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el contenedor del formulario */
+.form-container {
+    text-align: left;
+}
+
+/* Estilo para los campos de entrada */
+.form-container label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+/* Estilo para los checkboxes */
+.checkbox-container {
+    margin-top: 5px;
 }
