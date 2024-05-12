@@ -73,7 +73,7 @@ main {
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 80%;
+        width: 100%;
     }
 }
 
