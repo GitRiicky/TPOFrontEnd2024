@@ -27,8 +27,13 @@
         }
 
         /* Estilos para las imágenes dentro del contenedor */
-        .venta-motos .moto-img {
+        .venta-motos div {
             margin: 25px; /* Espacio entre las imágenes */
+        }
+
+        /* Estilos para el texto debajo de las imágenes */
+        .moto-text {
+            text-align: center;
         }
     </style>
 </head>
@@ -50,12 +55,30 @@
     <main>
         <h2>Nuestras Motos</h2>
         <div class="venta-motos">
-            <img src="./templates/static/moto1.webp" alt="Moto 1" class="moto-img">
-            <img src="./templates/static/moto2.webp" alt="Moto 2" class="moto-img">
-            <img src="./templates/static/moto3.webp" alt="Moto 3" class="moto-img">
-            <img src="./templates/static/moto4.webp" alt="Moto 4" class="moto-img">
-            <img src="./templates/static/moto5.webp" alt="Moto 5" class="moto-img">
-            <img src="./templates/static/moto6.webp" alt="Moto 6" class="moto-img">
+            <div>
+                <img src="./templates/static/moto1.webp" alt="Moto 1" class="moto-img">
+                <p class="moto-text">Yamaha YBR 125cc Z</p>
+            </div>
+            <div>
+                <img src="./templates/static/moto2.webp" alt="Moto 2" class="moto-img">
+                <p class="moto-text">Corven TRIAX 150cc R3</p>
+            </div>
+            <div>
+                <img src="./templates/static/moto3.webp" alt="Moto 3" class="moto-img">
+                <p class="moto-text">Bajaj V15 LA 150cc</p>
+            </div>
+            <div>
+                <img src="./templates/static/moto4.webp" alt="Moto 4" class="moto-img">
+                <p class="moto-text">Yamaha Ray ZR 125cc</p>
+            </div>
+            <div>
+                <img src="./templates/static/moto5.webp" alt="Moto 5" class="moto-img">
+                <p class="moto-text">Beta Tempo 150cc</p>
+            </div>
+            <div>
+                <img src="./templates/static/moto6.webp" alt="Moto 6" class="moto-img">
+                <p class="moto-text">Cftmoto 650 MT</p>
+            </div>
         </div>
     </main>
 </body>
