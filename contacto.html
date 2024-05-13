@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="templates/js/validation.js"></script>
     <link rel="icon" href="./templates/icons/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -74,28 +75,3 @@
             <p style="font-weight: bold; text-transform: uppercase;">¡GRACIAS POR CONTACTARNOS! TU MENSAJE HA SIDO ENVIADO CORRECTAMENTE.</p>
         </div>
     </main>
-
-    <script>
-    function validateForm() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var phone = document.getElementById('phone').value;
-        var message = document.getElementById('message').value;
-        var reason = document.getElementById('reason').value;
-        
-        if (name == "" || email == "" || phone == "" || message == "" || reason == "") {
-            alert("Por favor, complete todos los campos obligatorios.");
-            return false;
-        }
-        
-        document.getElementById('confirmation').style.display = 'block';
-        
-        resetForm(); // Llamamos a la función para resetear el formulario
-        
-        return false;
-    }
-
-    function resetForm() {
-        document.getElementById('contactForm').reset(); // Reseteamos el formulario
-    }
-</script>
