@@ -38,11 +38,11 @@ main {
     main {
         padding: 50px;
     }
-/* Estilo para los campos de entrada en modo escritorio */
+    /* Estilo para los campos de entrada en modo escritorio */
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 50%; !important;
+        width: 50% !important;
     }
 }
 
@@ -80,33 +80,33 @@ main {
 }
 
 /* Estilo para los campos de entrada */
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: none;
-        display: block; 
-        margin-bottom: 5px; 
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 /* Estilo para el formulario de contacto */
-    #contactForm {
-        background-image: url('../static/contacto.webp');
-        background-size: cover; 
-        background-position-y: -350px;
-        color: white; 
-        padding: 20px; 
-        border-radius: 10px;
+#contactForm {
+    background-image: url('../static/contacto.webp');
+    background-size: cover; 
+    background-position-y: -350px;
+    color: white; 
+    padding: 20px; 
+    border-radius: 10px;
 }
 
 /* Estilo para el contenedor del formulario */
-    .form-container {
-        text-align: left;
+.form-container {
+    text-align: left;
 }
 
 /* Estilos para el botón de enviar del formulario */
