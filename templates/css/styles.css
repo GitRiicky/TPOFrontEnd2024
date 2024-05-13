@@ -38,6 +38,12 @@ main {
     main {
         padding: 50px;
     }
+/* Estilo para los campos de entrada en modo escritorio */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 50% !important;
+    }
 }
 
 /* Estilos específicos para tablet */
