@@ -42,7 +42,7 @@ main {
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 50% !important;
+        width: 50%; !important;
     }
 }
 
