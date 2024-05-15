@@ -20,7 +20,7 @@
         main {
             background-color: rgba(240, 240, 240, 0.9); 
             border-radius: 20px; 
-            padding: 70px;
+            padding: 150px;
         }
 
         .video-container {
@@ -30,8 +30,25 @@
             margin-bottom: 20px;
         }
 
-        iframe {
+        iframe, video {
             max-width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            cursor: pointer;
+            color: #d23535;
+        }
+
+        .social-icons i:hover {
+            color: #007BFF;
         }
     </style>
 </head>
@@ -55,23 +72,32 @@
         <p>En los resplandecientes paisajes de una ciudad donde el rugido del motor es la melodía más apreciada, nació nuestra pasión por las motocicletas. Todo comenzó con un sueño: crear un espacio donde los amantes de la carretera pudieran encontrar no solo las mejores máquinas, sino también un lugar donde su pasión por las dos ruedas fuera celebrada y compartida.</p>
         <p>Así, en el corazón de la ciudad, surgió nuestra tienda de motocicletas. No es solo un lugar donde se venden máquinas; es un santuario para aquellos que sienten la llamada del camino. Desde las clásicas leyendas de dos tiempos hasta las innovadoras maravillas de la ingeniería moderna, nuestra colección abarca todas las historias que las carreteras tienen para contar.</p>
         <div class="video-container">
-            <iframe src="./templates/videos/acercade1.mp4" width="640" height="360" frameborder="0" allowfullscreen autoplay loop muted></iframe>
+            <video width="640" height="360" controls autoplay loop muted>
+                <source src="./templates/videos/acercade1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </div>
         <p>Nuestro equipo está compuesto por entusiastas de la moto, que entienden la conexión única entre un conductor y su máquina. Estamos aquí para ayudarte a encontrar la moto de tus sueños, ya sea para conquistar carreteras sinuosas o para desafiar los límites en el circuito. Además, ofrecemos una amplia gama de accesorios y equipamiento para garantizar que tu viaje sea seguro, cómodo y, sobre todo, emocionante.</p>
         <p>Pero nuestra tienda no es solo un destino para comprar; es un punto de encuentro para una comunidad apasionada. Organizamos eventos, viajes en grupo y actividades donde los aficionados pueden compartir historias, intercambiar consejos y crear recuerdos inolvidables juntos. Porque creemos que la verdadera belleza de viajar en moto no solo radica en el destino, sino en el viaje mismo y en las conexiones que creamos en el camino.</p>
         <div class="video-container">
-            <iframe src="./templates/videos/acercade2.mp4" width="640" height="360" frameborder="0" allowfullscreen autoplay loop muted></iframe>
+            <video width="640" height="360" controls autoplay loop muted>
+                <source src="./templates/videos/acercade2.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </div>
         <p>Así que únete a nosotros en esta emocionante aventura. Ya sea que seas un novato que recién empieza su viaje o un veterano de la carretera con muchas historias por contar, en nuestra tienda de motocicletas encontrarás más que máquinas: encontrarás un hogar para tu pasión. ¡Nos vemos en la carretera!</p>
         <div class="video-container">
-            <iframe src="./templates/videos/acercade3.mp4" width="640" height="360" frameborder="0" allowfullscreen autoplay loop muted></iframe>
+            <video width="640" height="360" controls autoplay loop muted>
+                <source src="./templates/videos/acercade3.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
         </div>
         
-            <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-            </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
     </main>
 </body>
 </html>
