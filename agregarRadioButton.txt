@@ -1,0 +1,11 @@
+<!-- Incluir dentro de una div con class o id correspondiente al form  -->
+<div class="radio-button-cuenta">
+	<span class="pregunta-cuenta">¿ Desea crear un usuario / cuenta ?</span>
+	<br><br>
+	<div class="generar-cuenta">
+		<input type="radio" name="cuentaNo" id="cuentaNo">
+		<label for="cuentaNo">No</label>
+		<input type="radio" name="cuentaSI" id="cuentaSI">
+		<label for="cuentaSI">Si</label>
+	</div>
+</div>
