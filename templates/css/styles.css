@@ -159,10 +159,10 @@ textarea {
 
 /* Estilo para los campos de entrada de los filtros en motos.html*/
 #filter-marca {
-    width: 50% !important;
+    width: 20% !important;
 }
 #filter-price {
-    width: 20% !important;
+    width: 15% !important;
 }
 
 /* Estilo para el contenedor del formulario */
