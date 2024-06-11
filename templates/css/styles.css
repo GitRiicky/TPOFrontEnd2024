@@ -94,6 +94,12 @@ main {
     textarea {
         width: 100%;
     }
+    #filter-marca {
+        width: 20% !important;
+    }
+    #filter-price {
+        width: 15% !important;
+    }
 }
 
 /* Estilos específicos para tablet */
@@ -149,20 +155,11 @@ textarea {
     background-image: url('../static/contacto.webp');
     background-size: cover;
     background-position-y: -200px;
-    width: 50%;
     color: white;
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
     margin: 0 auto; /* Centrar horizontalmente el formulario */
-}
-
-/* Estilo para los campos de entrada de los filtros en motos.html*/
-#filter-marca {
-    width: 20% !important;
-}
-#filter-price {
-    width: 15% !important;
 }
 
 /* Estilo para el contenedor del formulario */
