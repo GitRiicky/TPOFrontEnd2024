@@ -128,7 +128,7 @@
 
             motos.forEach(moto => {
                 const marca = moto.querySelector('.moto-text').textContent.toLowerCase();
-                const price = parseInt(moto.querySelector('.moto-price').textContent.replace('$', '').replace('.', ''));
+                const price = parseInt(moto.querySelector('.moto-price').textContent.replace('$', '').replace(/\./g, ''));
 
                 let show = true;
 
