@@ -6,96 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoAdictos</title>
     <link rel="stylesheet" href="./templates/css/styles.css">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .container {
-            text-align: center;
-            padding-top: 20px; 
-        }
-        .logo-nav-container {
-            display: inline-block;
-            vertical-align: top; 
-        }
-        .logo-img {
-            display: block; 
-        }
-        
-        nav ul li {
-            display: inline-block;
-            margin-right: 10px; 
-            transition: color 0.3s ease; 
-            position: relative; 
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            padding: 5px 10px; 
-            border-radius: 5px; 
-            transition: background-color 0.3s ease; 
-            position: relative; 
-            display: inline-block; 
-        }
-        nav ul li a:before,
-        nav ul li a:after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: #555; 
-            transition: background-color 0.3s ease; 
-        }
-        nav ul li a:before {
-            top: 0;
-            left: -1px; 
-        }
-        nav ul li a:after {
-            bottom: 0;
-            left: -1px;
-        }
-        nav ul li a:hover:before,
-        nav ul li a:hover:after {
-            background-color: #ddd;
-        }
-        nav ul li a:hover {
-            background-color: #ddd;
-            color: white;
-        }
-
-        main {
-            flex: 1;
-        }
-
-        .index-img {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
-            object-fit: contain;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo-nav-container">
-            <img src="./templates/static/logo.webp" alt="MotoAdictos" class="logo-img transition-soft-slow" width="400" height="200">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="motos.html">Motos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="acerca_de.html">Acerca de</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="container">
+            <div class="logo-nav-container">
+                <img src="./templates/static/logo.webp" alt="MotoAdictos" class="logo-img transition-soft-slow" width="400" height="200">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="motos.html">Motos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="acerca_de.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header>
     <main>
+        <section>
             <div>
                 <img src="./templates/static/index.webp" class="index-img" alt="MotoAdictos">
             </div>
+        </section>
     </main>
 </body>
 </html>
