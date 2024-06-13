@@ -7,7 +7,6 @@
     <title>MotoAdictos</title>
     <link rel="stylesheet" href="templates/css/styles.css">
     <style>
-        /* Añade este bloque de estilos al final del archivo CSS */
         .filter-controls {
             display: flex;
             gap: 20px;
@@ -17,9 +16,12 @@
             flex-direction: column;
         }
         .filter-input {
-            width: 200px; /* Ajusta el tamaño según sea necesario */
-            height: 20px; /* Ajusta el alto según sea necesario */
-            margin-top: 5px; /* Ajusta el espacio entre el label y el input */
+            width: 200px;
+            height: 20px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
