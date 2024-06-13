@@ -323,8 +323,8 @@ label {
     border-radius: 4px;
 }
 
-.comment-label,
-.comment-input {
+.comment-name label,
+.comment-name input {
     width: 100%;
     max-width: 500px;
     padding: 10px;
