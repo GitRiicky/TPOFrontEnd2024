@@ -31,6 +31,9 @@
         .comment-item button {
             margin-right: 5px;
         }
+        .button-span {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +68,7 @@
                     <input type="number" id="filter-price" class="filter-input" placeholder="Ingrese el precio máximo">
                 </div>
                 <button onclick="filterMotos()">Filtrar</button>
-                <button onclick="clearFilters()" style="margin-left: 10px;">Borrar Filtros</button>
+                <button onclick="clearFilters()" style="margin-left: 10px;"><span class="button-span">Borrar</span><span class="button-span">Filtros</span></button>
             </div>
 
             <section class="venta-motos">
