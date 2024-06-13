@@ -124,12 +124,13 @@ main {
     .filter-controls {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 20%;
     }
     .filter-controls label,
     .filter-controls input {
         width: 50%;
         margin-bottom: 5px;
+        box-sizing: border-box;
     }
 }
 
