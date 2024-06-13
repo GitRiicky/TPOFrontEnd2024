@@ -74,7 +74,34 @@
                 </div>
             </section>
         </article>
+
+        <!-- Sección de Comentarios -->
+        <section class="comments-section">
+            <h2>Comentarios</h2>
+            <div class="comment-form">
+                <label for="moto-select">Selecciona una Moto:</label>
+                <select id="moto-select">
+                    <option value="Yamaha YBR 125cc Z">Yamaha YBR 125cc Z</option>
+                    <option value="Corven TRIAX 150cc R3">Corven TRIAX 150cc R3</option>
+                    <option value="Bajaj V15 LA 150cc">Bajaj V15 LA 150cc</option>
+                    <option value="Yamaha Ray ZR 125cc">Yamaha Ray ZR 125cc</option>
+                    <option value="Beta Tempo 150cc">Beta Tempo 150cc</option>
+                    <option value="CFMOTO 650cc MT">CFMOTO 650cc MT</option>
+                </select>
+
+                <label for="comment-name">Nombre:</label>
+                <input type="text" id="comment-name" placeholder="Tu nombre">
+
+                <label for="comment-text">Comentario:</label>
+                <textarea id="comment-text" rows="4" placeholder="Escribe tu comentario"></textarea>
+
+                <button onclick="addComment()">Agregar Comentario</button>
+            </div>
+
+            <div id="comments-list"></div>
+        </section>
     </main>
+
     <script>
         function filterMotos() {
             const marcaFilter = document.getElementById('filter-marca').value.toLowerCase();
@@ -114,6 +141,48 @@
                 filterMotos();
             }
         });
+
+        function addComment() {
+            const moto = document.getElementById('moto-select').value;
+            const name = document.getElementById('comment-name').value;
+            const text = document.getElementById('comment-text').value;
+
+            if (name === "" || text === "") {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
+
+            const commentList = document.getElementById('comments-list');
+
+            const commentItem = document.createElement('div');
+            commentItem.classList.add('comment-item');
+
+            const commentMoto = document.createElement('h3');
+            commentMoto.textContent = moto;
+
+            const commentName = document.createElement('h4');
+            commentName.textContent = "Comentario por " + name;
+
+            const commentText = document.createElement('p');
+            commentText.textContent = text;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = "Eliminar";
+            deleteButton.onclick = function() {
+                commentList.removeChild(commentItem);
+            };
+
+            commentItem.appendChild(commentMoto);
+            commentItem.appendChild(commentName);
+            commentItem.appendChild(commentText);
+            commentItem.appendChild(deleteButton);
+
+            commentList.appendChild(commentItem);
+
+            // Clear input fields
+            document.getElementById('comment-name').value = "";
+            document.getElementById('comment-text').value = "";
+        }
     </script>
 </body>
 </html>
