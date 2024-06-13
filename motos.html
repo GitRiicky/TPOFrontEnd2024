@@ -131,7 +131,7 @@
             const marcaFilter = document.getElementById('filter-marca').value.toLowerCase();
             const priceFilter = document.getElementById('filter-price').value;
             const motos = document.querySelectorAll('.moto-item');
-
+    }
         function clearFilters() {
         // Limpiar los valores de los inputs de filtro
         document.getElementById('filter-marca').value = '';
@@ -142,7 +142,6 @@
         motos.forEach(moto => {
             moto.style.display = 'block';
         });
-    }
 
             motos.forEach(moto => {
                 const marca = moto.querySelector('.moto-text').textContent.toLowerCase();
