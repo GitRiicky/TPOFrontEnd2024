@@ -116,7 +116,7 @@ main {
 }
 
 /* Estilos específicos para dispositivos móviles */
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 460px) {
     header {
         padding: 10px 20px;
     }
