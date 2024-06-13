@@ -132,6 +132,16 @@ main {
         margin-bottom: 5px;
         box-sizing: border-box;
     }
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group button {
+        width: auto;
+        margin-bottom: 5px;
+    }
 }
 
 /* Estilo para los campos de entrada */
