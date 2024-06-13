@@ -323,6 +323,7 @@ label {
     border-radius: 4px;
 }
 
+.comment-label,
 .comment-input {
     width: 100%;
     max-width: 500px;
