@@ -300,7 +300,7 @@ iframe, video {
 /* Estilos específicos de contacto.html */
 label {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 1px;
+    padding: 2px;
     border-radius: 5px;
     color: white;
 }
