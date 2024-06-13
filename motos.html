@@ -23,6 +23,14 @@
             padding: 10px;
             border: 1px solid #ccc;
         }
+        .comment-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .comment-item button {
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -130,22 +138,21 @@
             const marcaFilter = document.getElementById('filter-marca').value.toLowerCase();
             const priceFilter = document.getElementById('filter-price').value;
             const motos = document.querySelectorAll('.moto-item');
-    }
-
+        
             motos.forEach(moto => {
                 const marca = moto.querySelector('.moto-text').textContent.toLowerCase();
                 const price = parseInt(moto.querySelector('.moto-price').textContent.replace('$', '').replace(/\./g, ''));
-
+        
                 let show = true;
-
+        
                 if (marcaFilter && !marca.includes(marcaFilter)) {
                     show = false;
                 }
-
+        
                 if (priceFilter && price > priceFilter) {
                     show = false;
                 }
-
+        
                 if (show) {
                     moto.style.display = 'block';
                 } else {
