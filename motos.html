@@ -65,6 +65,7 @@
                     <input type="number" id="filter-price" class="filter-input" placeholder="Ingrese el precio máximo">
                 </div>
                 <button onclick="filterMotos()">Filtrar</button>
+                <button onclick="clearFilters()" style="margin-left: 10px;">Borrar Filtros</button>
             </div>
 
             <section class="venta-motos">
@@ -158,6 +159,15 @@
                 } else {
                     moto.style.display = 'none';
                 }
+            });
+        }
+
+        function clearFilters() {
+            document.getElementById('filter-marca').value = '';
+            document.getElementById('filter-price').value = '';
+            const motos = document.querySelectorAll('.moto-item');
+            motos.forEach(moto => {
+                moto.style.display = 'block';
             });
         }
 
