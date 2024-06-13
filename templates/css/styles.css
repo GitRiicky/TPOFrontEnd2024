@@ -124,23 +124,24 @@ main {
     .filter-controls {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
     }
     .filter-controls label,
     .filter-controls input {
-        width: 50%;
+        width: 100%;
         margin-bottom: 5px;
         box-sizing: border-box;
     }
     .button-group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Alinea los botones en una fila */
+        gap: 10px; /* Espacio entre los botones */
         align-items: flex-start;
     }
 
     .button-group button {
         width: auto;
-        margin-bottom: 5px;
+        margin-bottom: 0; /* Elimina el margen inferior para que no haya espacio debajo del botón */
     }
 }
 
