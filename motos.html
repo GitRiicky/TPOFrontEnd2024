@@ -132,16 +132,6 @@
             const priceFilter = document.getElementById('filter-price').value;
             const motos = document.querySelectorAll('.moto-item');
     }
-        function clearFilters() {
-        // Limpiar los valores de los inputs de filtro
-        document.getElementById('filter-marca').value = '';
-        document.getElementById('filter-price').value = '';
-
-        // Mostrar todas las motos nuevamente
-        const motos = document.querySelectorAll('.moto-item');
-        motos.forEach(moto => {
-            moto.style.display = 'block';
-        });
 
             motos.forEach(moto => {
                 const marca = moto.querySelector('.moto-text').textContent.toLowerCase();
