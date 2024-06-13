@@ -120,6 +120,13 @@ main {
     header {
         padding: 10px 20px;
     }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
     main {
         padding: 20px;
     }
