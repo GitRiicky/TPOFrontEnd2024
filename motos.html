@@ -96,6 +96,7 @@
                 <textarea id="comment-text" rows="4" placeholder="Escribe tu comentario"></textarea>
 
                 <button onclick="addComment()">Agregar Comentario</button>
+                <button onclick="updateComment()" style="margin-left: 10px;">Modificar</button>
             </div>
 
             <div id="comments-list"></div>
@@ -103,6 +104,8 @@
     </main>
 
     <script>
+        let currentComment = null;
+
         function filterMotos() {
             const marcaFilter = document.getElementById('filter-marca').value.toLowerCase();
             const priceFilter = document.getElementById('filter-price').value;
@@ -172,16 +175,51 @@
                 commentList.removeChild(commentItem);
             };
 
+            const editButton = document.createElement('button');
+            editButton.textContent = "Editar";
+            editButton.onclick = function() {
+                document.getElementById('moto-select').value = moto;
+                document.getElementById('comment-name').value = name;
+                document.getElementById('comment-text').value = text;
+                currentComment = commentItem;
+            };
+
             commentItem.appendChild(commentMoto);
             commentItem.appendChild(commentName);
             commentItem.appendChild(commentText);
             commentItem.appendChild(deleteButton);
+            commentItem.appendChild(editButton);
 
             commentList.appendChild(commentItem);
 
             // Clear input fields
             document.getElementById('comment-name').value = "";
             document.getElementById('comment-text').value = "";
+        }
+
+        function updateComment() {
+            if (!currentComment) {
+                alert("Por favor, selecciona un comentario para modificar.");
+                return;
+            }
+
+            const moto = document.getElementById('moto-select').value;
+            const name = document.getElementById('comment-name').value;
+            const text = document.getElementById('comment-text').value;
+
+            if (name === "" || text === "") {
+                alert("Por favor, completa todos los campos.");
+                return;
+            }
+
+            currentComment.querySelector('h3').textContent = moto;
+            currentComment.querySelector('h4').textContent = "Comentario por " + name;
+            currentComment.querySelector('p').textContent = text;
+
+            // Clear input fields and reset currentComment
+            document.getElementById('comment-name').value = "";
+            document.getElementById('comment-text').value = "";
+            currentComment = null;
         }
     </script>
 </body>
