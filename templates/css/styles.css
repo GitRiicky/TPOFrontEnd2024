@@ -126,9 +126,13 @@ main {
         flex-direction: column;
         width: 100%;
     }
-    .filter-controls label,
+    .filter-controls label {
+        width: 50%;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
     .filter-controls input {
-        width: 100%;
+        width: 50%;
         margin-bottom: 5px;
         box-sizing: border-box;
     }
