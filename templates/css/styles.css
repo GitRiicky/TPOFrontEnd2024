@@ -121,16 +121,16 @@ main {
     footer {
         padding: 5px 20px;
     }
-    .filter-group {
+    .filter-controls {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .filter-group label,
-    .filter-group input {
+    .filter-controls label,
+    .filter-controls input {
         width: 100%;
         margin-bottom: 5px;
-            }
+    }
 }
 
 /* Estilo para los campos de entrada */
