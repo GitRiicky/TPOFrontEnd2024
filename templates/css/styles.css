@@ -126,6 +126,12 @@ main {
         flex-direction: column;
         width: 100%;
     }
+    .filter-controls label,
+    .filter-controls input {
+        width: 100%;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
     .button-group {
         display: flex;
         flex-direction: row; /* Alinea los botones en una fila */
