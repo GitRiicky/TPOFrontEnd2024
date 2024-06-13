@@ -88,13 +88,6 @@ main {
     main {
         padding: 50px;
     }
-
-    #filter-marca {
-        width: 20% !important;
-    }
-    #filter-price {
-        width: 15% !important;
-    }
 }
 
 /* Estilos específicos para tablet */
